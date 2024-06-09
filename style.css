@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(246, 241, 241, 0.529);
+}
+
+main {
+  background-image: url(https://www.freshminds.co.uk/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOVA0SWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--e5b4783db06b748789f2dd0e6414a62786654bae/digital_lightbulb_innovation_transformation.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(173, 216, 230, 0.248);
+  gap: 20px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 15px 10px;
+}
+
+header .logo {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 0px 3rem;
+  color: #fff;
+  column-gap: 10px;
+}
+
+header .menu {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  column-gap: 40px;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+}
+
+.menu a:hover {
+  color: #f13f3f;
+}
+
+header .menu li .home_menu {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 70px;
+  left: 25%;
+  background-color: #fff;
+  width: 180px;
+  height: 150px;
+  border-radius: 4px;
+  padding: 15px;
+  transition: 0.5s;
+}
+
+header .menu li:hover .home_menu {
+  opacity: 4;
+  visibility: visible;
+  top: 60px;
+}
+
+header .menu li .home_menu a {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  
+}
+
+header .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icons a {
+  padding-right: 4rem;
+  font-size: 30px;
+  color: #fff;
+}
+
+.image img {
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 0px 800px;
+}
+
+.line {
+  width: 190px;
+  background-color: #fff;
+  height: 1px;
+  position: absolute;
+  top: 40%;
+  left: 11%;
+  transform: translate(-50%, -50%);
+}
+
+.ui_ux {
+  width: 200px;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: #a24e4e;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: Jost, sans-serif;
+}
+
+.txt {
+  position: absolute;
+  top: 46%;
+  left: 15.3%;
+  transform: translate(-50%, -50%);
+  color: #f7f1f1;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-family: Jost, sans-serif;
+}
+
+.sm_txt {
+  width: 200px;
+  position: absolute;
+  top: 53%;
+  left: 11.5%;
+  transform: translate(-50%, -50%);
+  color: #aa5353;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: Jost, sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.sub_txt {
+  width: 200px;
+  position: absolute;
+  top: 54%;
+  left: 24%;
+  transform: translate(-50%, -50%);
+  color: #f2eeee;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Jost, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.sm_info {
+  position: absolute;
+  top: 62%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+  color: #f0ecec;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: Jost, sans-serif;
+}
+
+.btn {
+  width: 150px;
+  height: 40px;
+  position: absolute;
+  top: 70%;
+  left: 10.2%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+}
+
+.btn button {
+  width: 150px;
+  height: 40px;
+  border-radius: 18px;
+  background-color: #aa5353;
+  color: #f0ecec;
+  font-size: 15px;
+}
+
+.btn button:hover {
+  background-color: #f0ecec;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  header .menu {
+    column-gap: 10px;
+  }
+
+  .menu li a {
+    font-size: 15px;
+  }
+
+  header .logo {
+    font-size: 20px;
+  }
+  .icons a {
+    padding-right: 2rem;
+    font-size: 15px;
+    color: #fff;
+  }
+  .line {
+    flex-direction: column;
+    width: 110px;
+    position: absolute;
+  }
+  .ui_ux {
+    flex-direction: column;
+    width: 200px;
+    position: absolute;
+    top: 40%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+  }
+  .txt {
+    flex-direction: column;
+    position: absolute;
+    top: 46%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    letter-spacing: 1.2px;
+  }
+
+  .sm_txt {
+    flex-direction: column;
+    position: absolute;
+    top: 52%;
+    left: 17%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    letter-spacing: 1.2px;
+  }
+  .sub_txt {
+    flex-direction: column;
+    position: absolute;
+    top: 52.7%;
+    left: 31.5%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+  }
+
+  .sm_info {
+    flex-direction: column;
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+  }
+  .btn {
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 69%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+  }
+}
