@@ -128,7 +128,7 @@ header .icons {
   width: 200px;
   position: absolute;
   top: 40%;
-  left: 25%;
+  left: 24%;
   transform: translate(-50%, -50%);
   color: #a24e4e;
   font-size: 17px;
@@ -139,7 +139,7 @@ header .icons {
 .txt {
   position: absolute;
   top: 46%;
-  left: 15.3%;
+  left: 15%;
   transform: translate(-50%, -50%);
   color: #f7f1f1;
   font-size: 25px;
@@ -165,7 +165,7 @@ header .icons {
   width: 200px;
   position: absolute;
   top: 54%;
-  left: 24%;
+  left: 22%;
   transform: translate(-50%, -50%);
   color: #f2eeee;
   font-size: 20px;
@@ -177,7 +177,7 @@ header .icons {
 .sm_info {
   position: absolute;
   top: 62%;
-  left: 22%;
+  left: 21%;
   transform: translate(-50%, -50%);
   color: #f0ecec;
   font-size: 17px;
